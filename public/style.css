@@ -1,0 +1,9 @@
+:root{--terracota:#D95D39;--laguna:#39B5D9;--arena:#FFF1E6;--noche:#1A1A2E}
+*{transition: all 1.2s ease; font-family: Georgia, serif}
+body{background:linear-gradient(180deg,var(--arena),var(--laguna));margin:0;color:var(--noche);min-height:100vh}
+header{text-align:center;padding:20px;background:var(--terracota);color:var(--arena)}
+#feed{max-width:600px;margin:20px auto;display:flex;flex-direction:column;gap:30px}
+.post{background:rgba(255,255,255,0.9);border-radius:20px;padding:15px;box-shadow:0 10px 30px rgba(0,0,0,0.1)}
+.post img{width:100%;border-radius:15px;filter:blur(5px);animation:desvelar 1.2s forwards}
+@keyframes desvelar{to{filter:blur(0)}}
+#subir{max-width:600px;margin:40px auto;background:white;padding:15px;border-radius:15px;text-align:center}
